@@ -33,18 +33,15 @@ export const TodosFilter: React.FC<Props> = ({ setFilter, setSortOrder }) => {
       data-cy="todosFilter"
     >
       {filters.map(({ label, value, width }) => (
-        <li
-          key={value}
+        <button
+          type="button"
+          onClick={() => setFilter(value)}
+          key={label}
           className={`flex flex-shrink-0 bg-white cursor-pointer items-center justify-center rounded-md w-[${width}px] 
           text-center border-slate-300 border hover:border-slate-500 active:bg-slate-400 focus:bg-slate-500; duration-[0.3s]`}
         >
-          <button
-            type="button"
-            onClick={() => setFilter(value)}
-          >
-            {label}
-          </button>
-        </li>
+          {label}
+        </button>
       ))}
 
       <li className="flex bg-white items-center justify-center rounded-md w-[100px] flex-shrink-0 text-center border-slate-300 border hover:border-slate-500 duration-[0.3s] relative">

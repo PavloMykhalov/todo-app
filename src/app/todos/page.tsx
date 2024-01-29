@@ -58,9 +58,6 @@ export default function TodosPage() {
 
     if (filter) {
       switch (filter) {
-        case Status.ALL:
-          return currentTodos;
-
         case Status.ACTIVE:
           return currentTodos.filter(todo => !todo.completed);
 
