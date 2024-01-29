@@ -1,5 +1,5 @@
 import TodosProvider from '@/components/TodosContext';
-import '../globals.css';
+import '../output.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
