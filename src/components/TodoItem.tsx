@@ -1,7 +1,6 @@
 import {
   useContext, useState, useRef, useEffect,
 } from 'react';
-import classNames from 'classnames';
 import { TodosContext } from '../components/TodosContext';
 import { Todo } from '../types/Todo';
 import Image from 'next/image';
