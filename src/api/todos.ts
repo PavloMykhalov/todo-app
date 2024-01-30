@@ -1,7 +1,7 @@
 import { Todo } from '@/types/Todo';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.baseURL = 'https://todo-app-git-master-pavlomykhalovs-projects.vercel.app';
 
 export async function getAll(): Promise<Todo[]> {
   const response = await axios.get('/todos');
