@@ -33,6 +33,15 @@ export const Todo = sequelize.define('Todo', {
   createdAt: false,
 });
 
+Todo
+  .sync()
+  .then(() => {
+  console.log('Table created or successfully synchronized.');
+  })
+  .catch(error => {
+  console.error('Error syncing table:', error);
+});
+
 export const normalize = ({ id, title, completed, priority }) => {
   return { id, title, completed, priority };
 }
