@@ -147,8 +147,7 @@ export default function TodosPage() {
             required
             value={title}
             onChange={event => setTitle(event.target.value)}
-          >
-          </input>
+          />
 
           <PriorityButton setPriority={setPriority} priority={priority} />
 
