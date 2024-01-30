@@ -11,9 +11,6 @@ This project is a simple "Todo List" application that allows you to create, dele
 The list is implemented using the following technologies:
 Express, Next.js, REST API, Axios, Tailwind CSS.
 
-## Preview 
-You can view a preview by the link [here](https://todo-app-git-master-pavlomykhalovs-projects.vercel.app/)
-
 ## Getting Started
 To run the project on a local server, follow these steps:
 
