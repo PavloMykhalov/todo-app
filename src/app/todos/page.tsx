@@ -140,6 +140,7 @@ export default function TodosPage() {
           <input
             type="text"
             data-cy="createTodo"
+            id="todo-title"
             className="border-box flex-1 h-[50px] pl-[10px] border border-slate-300 
               rounded-l-full outline-none bg-slate-300 hover:border-slate-400 duration-[0.3s]"
             placeholder="Add your task"
